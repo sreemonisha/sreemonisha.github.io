@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>My profile</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<link rel="stylesheet" href="styles.css">
+
+<div class="header">
+ 
+
+  <h1>Sree Monisha</h1>
+  <p>My Profile</p>
+</div>
+
+<div class="navbar">
+  <a href="#"></a>
+  <a href="#"></a>
+  <a href="#"></a>
+  <a href="#" class="right"></a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>About Me</h2>
+    <h5>Photo of me:</h5>
+	<div>
+	 <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="my.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+	  <h3>Sree Monisha Nagarajan</h3>
+      <h4>Computer Science Engineer<h4>
+    </div>
+  </div>
+</div> 
+	</div>
+	<br>
+	<br>
+	<h1>My Skills</h1>
+
+<p>C</p>
+<div class="container">
+  <div class="skills html">80%</div>
+</div>
+
+<p>HTML/CSS</p>
+<div class="container">
+  <div class="skills css">70%</div>
+</div>
+
+<p>Java</p>
+<div class="container">
+  <div class="skills js">65%</div>
+</div>
+
+<p>SQL</p>
+<div class="container">
+  <div class="skills php">50%</div>
+</div>
+  </div>
+  <div class="main">
+    <h2>Educational Details</h2>
+    <div >
+	 <div class="row">
+  <div class="column">
+    <div class="card">
+	<h3>10th Grade</h3>
+	<p>Sri G.R.M.Girl's Higher Secondary School,Thiuvarur</p>
+	<h2>95.8%</h2>
+	</div>
+  </div>
+  <div class="column">
+    <div class="card">
+	<h3>12th Grade</h3>
+	<p>Sri G.R.M.Girl's Higher Secondary School,Thiuvarur</p>
+	<h2>91.6%</h2>
+	</div>
+  </div>
+  <div class="column">
+    <div class="card">
+	<h3>UG</h3>
+	<p>Velammal Institue of Technology</p>
+	<h2>80%</h2>
+	<p>till 7th sem</p>
+	</div>
+  </div>
+  </div>
+</div>
+    <div class="fakeimg" style="height:500px;">
+	 <div class="tab">
+  <button class="tablinks" onmouseover="openCity(event, 'London')">About Me</button>
+  <button class="tablinks" onmouseover="openCity(event, 'Paris')">Projects Done</button>
+  <button class="tablinks" onmouseover="openCity(event, 'Tokyo')">Extra-Curricular activies & Hobbies</button>
+</div>
+
+<div id="London" class="tabcontent">
+  <p>I am pursuing a degree in Computer Science and Engineering in Velammal Institue of Technology</p>
+  <p>I work efficiently both as an individual contributor as well as along with a team</p>
+  <p> I am a quick learner and believe in learning from my mistakes for I strongly feel that this virtue will take me ahead in life and career</p>
+</div>
+
+<div id="Paris" class="tabcontent">
+  <h2>Conference Management</h2>
+  <h3>Technology Used</h3>
+  <p>Front End- HTML,CSS,JavaA=Script</p>
+  <p>Back End- Mysql</p>
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  <p>Sketching</p>
+  <p>Cycling</p>
+</div> 
+<div class="clearfix"></div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+	
+	</div>
+  </div>
+</div>
+
+<div class="footer">
+  <footer>
+  <p>Posted by: Sree Monisha</p>
+  <h3>Contact information<h3>
+  <p>Phone - 9629325956</p>
+  <p>E-Mail - nsreemonisha@gmail.com</p>
+</footer>
+
+</div>
+
+</body>
+</html>
